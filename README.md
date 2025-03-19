@@ -24,7 +24,7 @@ CAT_API_KEY=your-api-key  # Required if you wish to use the cat command
    npm install
    ```
 3. Create a `.env` file and add your credentials (see above).
-4. Start the bot use the following in your terminal inside of the directory:
+4. To start the bot use the following in your terminal inside of the directory:
    ```sh
    node index.js
    ```
