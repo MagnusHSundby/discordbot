@@ -9,7 +9,7 @@ To run this bot, you need to create a `.env` file in the root directory and prov
 ### Required Environment Variables:
 ```env
 DISCORD_TOKEN=your-discord-bot-token
-GUILD_ID=your-discord-server-id
+GUILD_ID=your-discord-server-id # Used to quickly update slash commands in a specific server, or else they will need up to 1 hour to load
 CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https://thecatapi.com/
 DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
 ```
