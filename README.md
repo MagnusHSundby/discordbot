@@ -16,7 +16,7 @@ CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https:/
 ### Installation Steps
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo/discord-bot.git
+   git clone https://github.com/MagnusHSundby/discordbot.git
    cd discord-bot
    ```
 2. Install dependencies:
