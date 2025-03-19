@@ -11,6 +11,7 @@ To run this bot, you need to create a `.env` file in the root directory and prov
 DISCORD_TOKEN=your-discord-bot-token
 GUILD_ID=your-discord-server-id
 CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https://thecatapi.com/
+DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
 ```
 
 ### Installation Steps
@@ -35,7 +36,7 @@ CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https:/
 
 ## Features
 - Basic command handling
-- Fun commands like the `cat` command (requires API key)
+- Fun commands like the `cat` and `dog` command (requires API key)
 - Server-specific functionality
 
 ## Dependencies

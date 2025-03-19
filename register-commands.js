@@ -83,6 +83,12 @@ const commands = [
   ,
 
   new SlashCommandBuilder()
+  .setName('dog')
+  .setDescription('Sends a random dog image')
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+
+  new SlashCommandBuilder()
   .setName('purge')
   .setDescription('Purges messages from a channel')
   .addIntegerOption(option =>

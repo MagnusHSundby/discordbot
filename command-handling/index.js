@@ -8,6 +8,7 @@ const purge = require('./commands/purge');
 const mute = require('./commands/mute');
 const unmute = require('./commands/unmute');
 const embed = require('./commands/embed');
+const dog = require('./commands/dog');
 
 
 function setupCommandHandlers(client) {
@@ -19,6 +20,7 @@ function setupCommandHandlers(client) {
     test: test.execute,
     ban: ban.execute,
     cat: cat.execute,
+    dog: dog.execute,
     purge: purge.execute,
     mute: mute.execute,
     unmute: (interaction) => unmute.execute(interaction, client),
