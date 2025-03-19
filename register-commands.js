@@ -139,7 +139,7 @@ const commands = [
       .setDescription('a message to the user')
       .setRequired(false)
   )
-  .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles)   
+  .setDefaultMemberPermissions(PermissionFlagsBits.ModerateMembers)   
 
   ,
   new SlashCommandBuilder()
@@ -163,7 +163,7 @@ const commands = [
           .setDescription('The color of the embed')
           .setRequired(true)
       )
-      .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+      .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages, PermissionFlagsBits.EmbedLinks)
   ,
 ];
   

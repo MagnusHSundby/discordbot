@@ -1,7 +1,6 @@
 const pingCommand = require('./commands/ping');
 const kickCommand = require('./commands/kick');
 const sendDmCommand = require('./commands/senddm');
-const test = require('./commands/test');
 const ban = require('./commands/ban');
 const cat = require('./commands/cat');
 const purge = require('./commands/purge');
@@ -17,7 +16,6 @@ function setupCommandHandlers(client) {
     ping: pingCommand.execute,
     kick: kickCommand.execute,
     senddm: (interaction) => sendDmCommand.execute(interaction, client),
-    test: test.execute,
     ban: ban.execute,
     cat: cat.execute,
     dog: dog.execute,
