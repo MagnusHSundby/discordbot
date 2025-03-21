@@ -14,11 +14,7 @@ To run this bot, you need to create a `.env` file in the root directory and prov
    ```sh
    git clone https://github.com/MagnusHSundby/discordbot.git
    ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials:
+2. To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials:
 
 ### Required Environment Variables:
 ```env
@@ -28,11 +24,11 @@ CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https:/
 DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
 ```
 
-4. To start the bot use the following in your terminal inside of the directory:
+3. To start the bot use the following in your terminal inside of the directory:
    ```sh
    node index.js
    ```
-5. If you want to deploy new commands, you need to run:
+4. If you want to deploy new commands, you need to run:
    ```sh
    node register-commands.js
    ```
