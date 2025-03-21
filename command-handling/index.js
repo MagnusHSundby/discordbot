@@ -8,6 +8,7 @@ const mute = require('./commands/mute');
 const unmute = require('./commands/unmute');
 const embed = require('./commands/embed');
 const dog = require('./commands/dog');
+const unban = require('./commands/unban');
 
 
 function setupCommandHandlers(client) {
@@ -22,7 +23,8 @@ function setupCommandHandlers(client) {
     purge: purge.execute,
     mute: mute.execute,
     unmute: (interaction) => unmute.execute(interaction, client),
-    embed: embed.execute
+    embed: embed.execute,
+    unban: unban.execute
   };
 
   // Handle slash command interactions

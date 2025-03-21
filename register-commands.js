@@ -77,6 +77,18 @@ const commands = [
   ,
 
   new SlashCommandBuilder()
+  .setName('unban')
+  .setDescription('Unbans a user from the server')
+  .addUserOption(option =>
+    option
+      .setName('user')
+      .setDescription('The user to unban')
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers)
+  ,
+
+  new SlashCommandBuilder()
   .setName('cat')
   .setDescription('Sends a random cat image')
   .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
