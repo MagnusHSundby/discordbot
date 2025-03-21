@@ -2,11 +2,9 @@ const { PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
     execute: async function(interaction, client) {
-        // Get the user object directly instead of the ID string
         const targetUser = interaction.options.getUser('user');
         const messageToUser = interaction.options.getString('message'); // Get optional message
         
-        // Check for ModerateMembers permission (required for timeout management)
         if (!interaction.memberPermissions.has(PermissionFlagsBits.ModerateMembers)) {
             return interaction.reply({
                 content: "You don't have permission to remove timeouts.",
@@ -33,7 +31,6 @@ module.exports = {
                 });
             }
             
-            // Check if the bot can moderate this user
             if (!member.moderatable) {
                 return interaction.editReply({
                     content: "I don't have permission to remove timeout from this user. They may have higher permissions than me.",

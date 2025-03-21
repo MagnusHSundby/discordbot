@@ -44,7 +44,7 @@ module.exports = {
         // Continue with the ban even if DM fails
       }
       
-      // Ban the user without deleting messages (no deleteMessageSeconds option)
+      // Ban the user 
       await interaction.guild.members.ban(targetUser, {
         reason: reason
       });
