@@ -15,10 +15,12 @@ DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://
 ```
 
 ### Installation Steps
-1. Clone this repository:
+1. Clone this repository into a befitting directory:
+   ```sh
+   navigate to your directory
+   ```
    ```sh
    git clone https://github.com/MagnusHSundby/discordbot.git
-   cd discord-bot
    ```
 2. Install dependencies:
    ```sh
