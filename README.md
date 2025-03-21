@@ -6,13 +6,7 @@ This is a Discord bot written in JavaScript using Node.js and the Discord.js lib
 
 To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials:
 
-### Required Environment Variables:
-```env
-DISCORD_TOKEN=your-discord-bot-token
-GUILD_ID=your-discord-server-id # Used to quickly update slash commands in a specific server, or else they will need up to 1 hour to load
-CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https://thecatapi.com/
-DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
-```
+
 
 ### Installation Steps
 1. Clone this repository into a befitting directory:
@@ -24,7 +18,16 @@ DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://
    ```sh
    npm install
    ```
-3. Create a `.env` file and add your credentials (see above).
+3. To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials:
+
+### Required Environment Variables:
+```env
+DISCORD_TOKEN=your-discord-bot-token
+GUILD_ID=your-discord-server-id # Used to quickly update slash commands in a specific server, or else they will need up to 1 hour to load
+CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https://thecatapi.com/
+DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
+```
+
 4. To start the bot use the following in your terminal inside of the directory:
    ```sh
    node index.js
