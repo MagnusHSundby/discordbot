@@ -14,7 +14,8 @@ module.exports = {
       { name: 'cat', description: 'Shows a random cat image' },
       { name: 'dog', description: 'Shows a random dog image' },
       { name: 'embed', description: 'Creates a custom embed message' },
-      { name: 'help', description: 'Shows this help message' }
+      { name: 'help', description: 'Shows this help message' },
+      { name: 'goat', description: 'Shows a random goat image' },
     ];
 
     // Create fields for each command

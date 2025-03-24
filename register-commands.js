@@ -184,7 +184,13 @@ const commands = [
   
   .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
   ,
-  
+
+  new SlashCommandBuilder()
+  .setName('goat')
+  .setDescription('Sends a random goat image')
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+
 ];
   
 

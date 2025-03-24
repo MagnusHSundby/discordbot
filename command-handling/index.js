@@ -10,6 +10,7 @@ const embed = require('./commands/embed');
 const dog = require('./commands/dog');
 const unban = require('./commands/unban');
 const help = require('./commands/help');
+const goat = require('./commands/goat');
 
 
 function setupCommandHandlers(client) {
@@ -27,6 +28,7 @@ function setupCommandHandlers(client) {
     embed: embed.execute,
     unban: unban.execute,
     help: help.execute,
+    goat: goat.execute,
   };
 
   // Handle slash command interactions
