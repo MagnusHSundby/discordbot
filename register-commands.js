@@ -177,6 +177,14 @@ const commands = [
       )
       .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages, PermissionFlagsBits.EmbedLinks)
   ,
+
+  new SlashCommandBuilder()
+  .setName('help')
+  .setDescription('Shows all available commands')
+  
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+  
 ];
   
 
