@@ -9,7 +9,7 @@ To run this bot, you need to create a `.env` file in the root directory and prov
 
 
 ### Installation Steps
-1. Clone this repository into a befitting directory:
+1. Clone this repository (or download the latest release) into a befitting directory:
    - navigate to your directory
    ```sh
    git clone https://github.com/MagnusHSundby/discordbot.git
