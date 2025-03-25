@@ -39,7 +39,9 @@ function setupCommandHandlers(client) {
 
     const { commandName } = interaction;
     const { user } = interaction;
-    console.log(`Received command from ${user}: ${commandName}`);
+    const { guild } = interaction;
+    const { channel } = interaction;
+    console.log(`Received command: "/${commandName}" from ${user} in "${guild}" #${channel}`);
 
     // Check if we have a handler for this command
     if (commandHandlers[commandName]) {
