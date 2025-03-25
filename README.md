@@ -20,9 +20,7 @@ To run this bot, you need to create a `.env` file in the root directory and prov
 ```env
 DISCORD_TOKEN=your-discord-bot-token
 GUILD_ID=your-discord-server-id # Used to quickly update slash commands in a specific server, or else they will need up to 1 hour to load
-CAT_API_KEY=your-api-key  # Required if you wish to use the cat command, https://thecatapi.com/
-DOG_API_KEY=your-apy-key # Required if you wish to use the cat command, https://thedogapi.com/
-PIXABAY_API_KEY=your-api-key # Required of you wish to use the goat command, https://pixabay.com/
+PIXABAY_API_KEY=your-api-key # Required of you wish to use the animal related commands, https://pixabay.com/
 ```
 
 3. To start the bot use the following in your terminal inside of the directory:
