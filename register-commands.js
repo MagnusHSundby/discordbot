@@ -101,6 +101,12 @@ const commands = [
   ,
 
   new SlashCommandBuilder()
+  .setName('raccoon')
+  .setDescription('Sends a random raccoon image')
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+  
+  new SlashCommandBuilder()
   .setName('purge')
   .setDescription('Purges messages from a channel')
   .addIntegerOption(option =>
