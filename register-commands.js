@@ -4,7 +4,6 @@ const { REST, Routes, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } =
 const TOKEN = process.env.DISCORD_BOT_ID;
 const GUILD_ID = process.env.GUILD_ID || '';
 
-// Check for required environment variables
 if (!TOKEN) {
   console.error('Error: DISCORD_BOT_ID is not set in the .env file');
   process.exit(1);

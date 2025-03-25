@@ -38,7 +38,8 @@ function setupCommandHandlers(client) {
     if (!interaction.isCommand()) return;
 
     const { commandName } = interaction;
-    console.log(`Received command: ${commandName}`);
+    const { user } = interaction;
+    console.log(`Received command from ${user}: ${commandName}`);
 
     // Check if we have a handler for this command
     if (commandHandlers[commandName]) {

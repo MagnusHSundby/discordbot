@@ -26,7 +26,7 @@ module.exports = {
         });
       }
       
-      // Parse the duration (convert string like "1d" to milliseconds)
+      // convert string like "1d" to milliseconds
       const durationMs = parseDuration(duration);
       
       if (!durationMs) {
@@ -35,7 +35,7 @@ module.exports = {
         });
       }
       
-      if (durationMs > 2419200000) { // Max timeout is 28 days (28 * 24 * 60 * 60 * 1000)
+      if (durationMs > 2419200000) { // Max timeout is 28 days according to discordjs
         return interaction.editReply({
           content: "Timeout duration cannot exceed 28 days."
         });
