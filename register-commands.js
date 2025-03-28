@@ -197,6 +197,18 @@ const commands = [
   ,
 
   new SlashCommandBuilder()
+  .setName('animal')
+  .setDescription('Sends a request for a specific animal image')
+  .addStringOption(option =>
+    option
+      .setName('animal')
+      .setDescription('The animal to search for')
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+  
+  new SlashCommandBuilder()
   .setName('lockdown')
   .setDescription('Locks down a channel')
   .addChannelOption(option =>

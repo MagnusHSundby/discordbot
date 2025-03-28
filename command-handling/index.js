@@ -14,6 +14,7 @@ const goat = require('./commands/goat');
 const raccoon = require('./commands/raccoon');
 const lockdown = require('./commands/lockdown');
 const openlockdown = require('./commands/openlockdown');
+const animal = require('./commands/animal');
 
 
 function setupCommandHandlers(client) {
@@ -34,7 +35,8 @@ function setupCommandHandlers(client) {
     goat: goat.execute,
     raccoon: raccoon.execute,
     lockdown: lockdown.execute,
-    openlockdown: openlockdown.execute
+    openlockdown: openlockdown.execute,
+    animal: animal.execute
   };
 
   // Handle slash command interactions
