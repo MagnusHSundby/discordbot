@@ -12,6 +12,8 @@ const unban = require('./commands/unban');
 const help = require('./commands/help');
 const goat = require('./commands/goat');
 const raccoon = require('./commands/raccoon');
+const lockdown = require('./commands/lockdown');
+const openlockdown = require('./commands/openlockdown');
 
 
 function setupCommandHandlers(client) {
@@ -31,6 +33,8 @@ function setupCommandHandlers(client) {
     help: help.execute,
     goat: goat.execute,
     raccoon: raccoon.execute,
+    lockdown: lockdown.execute,
+    openlockdown: openlockdown.execute
   };
 
   // Handle slash command interactions

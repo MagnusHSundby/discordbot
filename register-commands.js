@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { REST, Routes, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
+const { REST, Routes, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChannelType } = require('discord.js');
 
 const TOKEN = process.env.DISCORD_BOT_ID;
 const GUILD_ID = process.env.GUILD_ID || '';
@@ -196,6 +196,31 @@ const commands = [
   .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
   ,
 
+  new SlashCommandBuilder()
+  .setName('lockdown')
+  .setDescription('Locks down a channel')
+  .addChannelOption(option =>
+    option
+      .setName('channel')
+      .setDescription('The channel to lock down')
+      .addChannelTypes(ChannelType.GuildText)
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.ManageChannels, PermissionFlagsBits.Administrator)
+  ,
+
+  new SlashCommandBuilder()
+  .setName('openlockdown')
+  .setDescription('Removes a channel lockdown')
+  .addChannelOption(option =>
+    option
+      .setName('channel')
+      .setDescription('The channel to unlock')
+      .addChannelTypes(ChannelType.GuildText)
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.ManageChannels, PermissionFlagsBits.Administrator)
+  ,
 ];
   
 
