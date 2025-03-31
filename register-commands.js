@@ -233,6 +233,17 @@ const commands = [
   )
   .setDefaultMemberPermissions(PermissionFlagsBits.ManageChannels, PermissionFlagsBits.Administrator)
   ,
+
+  new SlashCommandBuilder()
+  .setName('ai')
+  .setDescription('Talk to an AI')
+  .addStringOption(option =>
+    option
+      .setName('message')
+      .setDescription('The message to send to the AI')
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
 ];
   
 
