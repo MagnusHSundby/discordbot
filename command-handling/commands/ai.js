@@ -1,15 +1,7 @@
-const { SlashCommandBuilder } = require('discord.js');
 const axios = require('axios');
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('ai')
-        .setDescription('Get a response from AI')
-        .addStringOption(option =>
-            option.setName('prompt')
-                .setDescription('Your question or prompt for the AI')
-                .setRequired(true)),
-    
+
     async execute(interaction) {
         await interaction.deferReply(); 
         

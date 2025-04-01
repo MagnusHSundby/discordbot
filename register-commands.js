@@ -244,6 +244,19 @@ const commands = [
       .setRequired(true)
   )
   .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
+
+  new SlashCommandBuilder()
+  .setName('image')
+  .setDescription('Ai generates an image')
+  .addStringOption(option =>
+    option
+      .setName('prompt')
+      .setDescription('The prompt for the image')
+      .setRequired(true)
+  )
+  .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
+  ,
 ];
   
 
