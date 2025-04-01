@@ -5,7 +5,7 @@ module.exports = {
     await interaction.deferReply(); 
     
     const prompt = interaction.options.getString('prompt'); 
-    
+    const resolution = interaction.options.getString('resolution') || '1024x1024';
     if (!prompt) {
       return await interaction.editReply('Please provide a prompt for image generation.');
     }
@@ -19,7 +19,7 @@ module.exports = {
         model: "dall-e-3",
         prompt: prompt,
         n: 1,
-        size: "1024x1024"
+        size: resolution,
       });
 
       const imageUrl = response.data[0].url;

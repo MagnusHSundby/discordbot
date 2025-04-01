@@ -255,6 +255,16 @@ const commands = [
       .setDescription('The prompt for the image')
       .setRequired(true)
   )
+  .addStringOption(option =>
+    option
+      .setName('resolution')
+      .setDescription('The resolution of the image')
+      .addChoices(
+        { name: '1024x1024', value: '1024x1024' },
+        { name: '1792x1024', value: '1792x1024' },
+        { name: '1024x1792', value: '1024x1792' }
+      )
+  )
   .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages)
   ,
 ];
