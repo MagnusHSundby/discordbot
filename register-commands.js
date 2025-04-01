@@ -253,7 +253,7 @@ const commands = [
     option
       .setName('prompt')
       .setDescription('The prompt for the image')
-      .setRequired(true)
+      .setRequired(false)
   )
   .addStringOption(option =>
     option

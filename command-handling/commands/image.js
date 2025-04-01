@@ -7,7 +7,7 @@ module.exports = {
     const prompt = interaction.options.getString('prompt'); 
     const resolution = interaction.options.getString('resolution') || '1024x1024';
     if (!prompt) {
-      return await interaction.editReply('Please provide a prompt for image generation.');
+      return await interaction.editReply('did you really think you could get away with not providing a prompt?');
     }
     
     try {
