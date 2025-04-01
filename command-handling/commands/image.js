@@ -1,4 +1,4 @@
-const axios = require('axios');
+const { OpenAI } = require('openai');
 
 module.exports = {
   execute: async function(interaction) {
@@ -11,23 +11,18 @@ module.exports = {
     }
     
     try {
-      const response = await axios.post(
-        'https://api.openai.com/v1/images/generations',
-        {
-          model: "dall-e-3", 
-          prompt: prompt,
-          n: 1,              
-          size: "1024x1024"  
-        },
-        {
-          headers: {
-            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-            'Content-Type': 'application/json'
-          }
-        }
-      );
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY
+      });
       
-      const imageUrl = response.data.data[0].url;
+      const response = await openai.images.generate({
+        model: "dall-e-3",
+        prompt: prompt,
+        n: 1,
+        size: "1024x1024"
+      });
+
+      const imageUrl = response.data[0].url;
       
       await interaction.editReply({
         content: `Here's your generated image for: "${prompt}"`,
