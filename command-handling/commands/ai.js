@@ -1,8 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const axios = require('axios');
 
-require('dotenv').config();
-
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ai')
