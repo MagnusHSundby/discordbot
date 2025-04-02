@@ -34,7 +34,7 @@ module.exports = {
       
     } catch (error) {
       console.error('Error generating image:', error);
-      await interaction.editReply('Sorry, I encountered an error while generating your image.');
+      await interaction.editReply('Sorry, I encountered an error while generating your image. The issue might lie with the prompt you provided.');
     }
   }
 };
