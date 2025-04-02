@@ -35,8 +35,10 @@ OPENAI_API_=your-api-key # Required if you want to use the ai related commands. 
 
 ## Features
 - Basic command handling
+- Moderation tools such as `ban`, `kick` etc
 - Fun commands like the `cat` and `dog` command (requires API key)
-- Server-specific functionality
+- Utilizes openai ai models to create more interactivity with the bot (requires API key)
+- Server-specific loading for development purposes
 
 ## Dependencies
 - [Node.js](https://nodejs.org/)
