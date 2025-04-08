@@ -38,7 +38,7 @@ module.exports = {
       
       // Notify Staff
       await interaction.editReply({
-        content: `Successfully sent a direct message to ${user.tag} (${userId}).`,
+        content: `Successfully sent a direct message to ${user.tag} (${userId}) Message: "${messageContent}"`,
         ephemeral: true
       });
     } catch (error) {
