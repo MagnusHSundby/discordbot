@@ -4,7 +4,7 @@ This is a Discord bot written in JavaScript using Node.js and the Discord.js lib
 
 ## Setup
 
-To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials:
+To run this bot, you need to create a `.env` file in the root directory and provide the necessary credentials, if you dont want to use the features that requires api keys then you have to modify the code and comment/delete the desired files:
 
 
 
